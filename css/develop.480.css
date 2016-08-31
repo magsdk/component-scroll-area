@@ -1,0 +1,7 @@
+/* mag-component-scroll-area: release */
+.component.scrollArea {
+    overflow: hidden;
+    height: 100%;
+    position: relative; }
+    .component.scrollArea > .body {
+        position: absolute; }

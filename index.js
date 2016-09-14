@@ -131,14 +131,16 @@ ScrollArea.prototype.defaultEvents = {
  * @param {number} direction to move
  */
 ScrollArea.prototype.move = function ( direction ) {
+    var height = app.metrics.height;
+
     switch ( direction ) {
         case rc.codes.down:
-            if ( this.topPosition - this.step * app.data.metrics.height / 100 < this.viewHeight - this.realHeight ) {
+            if ( this.topPosition - this.step * height / 100 < this.viewHeight - this.realHeight ) {
                 this.emit('overflow', {direction: direction});
                 return;
             }
 
-            this.topPosition -= this.step * app.data.metrics.height / 100;
+            this.topPosition -= this.step * height / 100;
 
             if ( this.scroll ) {
                 this.scroll.scrollTo(-this.topPosition);
@@ -146,11 +148,11 @@ ScrollArea.prototype.move = function ( direction ) {
             this.$body.style.top =  this.topPosition + 'px';
             break;
         case rc.codes.up:
-            if ( this.topPosition + this.step * app.data.metrics.height / 100 > 0 ) {
+            if ( this.topPosition + this.step * height / 100 > 0 ) {
                 this.emit('overflow', {direction: direction});
                 return;
             }
-            this.topPosition += this.step * app.data.metrics.height / 100;
+            this.topPosition += this.step * height / 100;
 
             if ( this.scroll ) {
                 this.scroll.scrollTo(-this.topPosition);

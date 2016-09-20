@@ -9,7 +9,7 @@
 
 var Component = require('spa-component'),
     app       = require('mag-app'),
-    rc        = require('stb-rc');
+    keys      = require('stb-keys');
 
 /**
  * Scroll area implementation
@@ -106,10 +106,10 @@ ScrollArea.prototype.defaultEvents = {
      * @param {Event} event generated event
      */
     keydown: function ( event ) {
-        switch ( event.keyCode ) {
-            case rc.codes.up:
-            case rc.codes.down:
-                this.move(event.keyCode);
+        switch ( event.code ) {
+            case keys.up:
+            case keys.down:
+                this.move(event.code);
                 break;
         }
     }
@@ -134,7 +134,7 @@ ScrollArea.prototype.move = function ( direction ) {
     var height = app.metrics.height;
 
     switch ( direction ) {
-        case rc.codes.down:
+        case keys.down:
             if ( this.topPosition - this.step * height / 100 < this.viewHeight - this.realHeight ) {
                 this.emit('overflow', {direction: direction});
                 return;
@@ -147,7 +147,7 @@ ScrollArea.prototype.move = function ( direction ) {
             }
             this.$body.style.top =  this.topPosition + 'px';
             break;
-        case rc.codes.up:
+        case keys.up:
             if ( this.topPosition + this.step * height / 100 > 0 ) {
                 this.emit('overflow', {direction: direction});
                 return;

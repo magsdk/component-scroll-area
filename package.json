@@ -19,7 +19,7 @@
     "dependencies": {
         "spa-component": "spasdk/component",
         "mag-app": "magsdk/app",
-        "stb-rc": "stbsdk/rc"
+        "stb-keys": "stbsdk/keys"
     },
     "devDependencies": {
         "eslint": "3.*.*",

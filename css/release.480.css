@@ -1,10 +1,10 @@
-.mag-component-footer {
+.mag-component-scroll-area {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     overflow: hidden;
     height: 100%;
     position: relative; }
-    .mag-component-footer.hidden {
+    .mag-component-scroll-area.hidden {
         display: none; }
-    .mag-component-footer > .body {
+    .mag-component-scroll-area > .body {
         position: absolute; }

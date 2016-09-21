@@ -1,4 +1,4 @@
-.mag-component-footer {
+.mag-component-scroll-area {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     overflow: hidden;
@@ -6,9 +6,9 @@
     position: relative;
     outline: 1px dashed #005000;
     outline-offset: -1px; }
-    .mag-component-footer.hidden {
+    .mag-component-scroll-area.hidden {
         display: none; }
-    .mag-component-footer > .body {
+    .mag-component-scroll-area > .body {
         position: absolute; }
-    .mag-component-footer.focus {
+    .mag-component-scroll-area.focus {
         outline: 1px dashed red; }

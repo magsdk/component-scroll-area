@@ -1,7 +1,14 @@
-/* mag-component-scroll-area: release */
-.component.scrollArea {
+.mag-component-footer {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     overflow: hidden;
     height: 100%;
-    position: relative; }
-    .component.scrollArea > .body {
+    position: relative;
+    outline: 1px dashed #005000;
+    outline-offset: -1px; }
+    .mag-component-footer.hidden {
+        display: none; }
+    .mag-component-footer > .body {
         position: absolute; }
+    .mag-component-footer.focus {
+        outline: 1px dashed red; }

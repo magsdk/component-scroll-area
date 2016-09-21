@@ -1,12 +1,14 @@
 // @license The MIT License (MIT)
 // @copyright Stanislav Kalashnik <darkpark.main@gmail.com>
 
-/* mag-component-scroll-area: release */
-.component.scrollArea {
-    overflow: hidden;
-    height: 100%;
-    position: relative;
-    >.body {
-        position: absolute;
+@import "body";
+@import "../node_modules/stb-component/sass/main";
+
+.mag-component-footer {
+    @include stb-component-release;
+    @include mag-component-scroll-area;
+
+    @if $DEVELOP {
+        @include stb-component-develop;
     }
 }

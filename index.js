@@ -40,7 +40,7 @@ function ScrollArea ( config ) {
         if ( config.className && typeof config.className !== 'string' ) { throw new Error(__filename + ': wrong or empty config.className'); }
     }
 
-    config.className = ' scrollArea ' + (config.className || '');
+    //config.className = ' scrollArea ' + (config.className || '');
 
     config.$body = document.createElement('div');
     config.$body.className = 'body';
@@ -92,6 +92,9 @@ function ScrollArea ( config ) {
 
 ScrollArea.prototype = Object.create(Component.prototype);
 ScrollArea.prototype.constructor = ScrollArea;
+
+// set component name
+ScrollArea.prototype.name = 'mag-component-scroll-area';
 
 
 /**

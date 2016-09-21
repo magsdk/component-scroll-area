@@ -1,7 +1,10 @@
-/* mag-component-scroll-area: release */
-.component.scrollArea {
+.mag-component-footer {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
     overflow: hidden;
     height: 100%;
     position: relative; }
-    .component.scrollArea > .body {
+    .mag-component-footer.hidden {
+        display: none; }
+    .mag-component-footer > .body {
         position: absolute; }

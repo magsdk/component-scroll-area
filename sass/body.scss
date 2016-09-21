@@ -1,0 +1,11 @@
+// @license The MIT License (MIT)
+// @copyright Stanislav Kalashnik <darkpark.main@gmail.com>
+
+@mixin mag-component-scroll-area {
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+  >.body {
+    position: absolute;
+  }
+}

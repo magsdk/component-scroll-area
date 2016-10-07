@@ -7,9 +7,9 @@
 
 'use strict';
 
-var Component = require('spa-component'),
-    app       = require('mag-app'),
-    keys      = require('stb-keys');
+var Component  = require('spa-component'),
+    appMetrics = require('app:metrics'),
+    keys       = require('stb-keys');
 
 /**
  * Scroll area implementation
@@ -134,7 +134,7 @@ ScrollArea.prototype.defaultEvents = {
  * @param {number} direction to move
  */
 ScrollArea.prototype.move = function ( direction ) {
-    var height = app.metrics.height;
+    var height = appMetrics.height;
 
     switch ( direction ) {
         case keys.down:

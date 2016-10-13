@@ -8,8 +8,8 @@
 'use strict';
 
 var Component  = require('spa-component'),
-    appMetrics = require('app:metrics'),
     keys       = require('stb-keys');
+
 
 /**
  * Scroll area implementation
@@ -19,16 +19,6 @@ var Component  = require('spa-component'),
  *
  * @param {Object} config object
  * @param {number} [config.step] step in % of screen height to scroll area
- *
- * @example
- * var ScrollArea = require('../stb/ui/scroll.area'),
- *     textArea = new ScrollArea({
- *         step: 5
- *         });
- *
- * textArea.$body.innerText = 'Some long long long text to scroll..........';
- * textArea.init();
- *
  */
 function ScrollArea ( config ) {
 
@@ -134,7 +124,7 @@ ScrollArea.prototype.defaultEvents = {
  * @param {number} direction to move
  */
 ScrollArea.prototype.move = function ( direction ) {
-    var height = appMetrics.height;
+    var height = screen.height;
 
     switch ( direction ) {
         case keys.down:

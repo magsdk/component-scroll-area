@@ -19,10 +19,41 @@ npm install mag-component-scroll-area
 
 ## Usage ##
 
-Add the singleton to the scope:
+Add the constructor to the scope:
 
 ```js
-var list = require('mag-component-scroll-area');
+var ScrollArea = require('mag-component-scroll-area');
+```
+
+Specific properties:
+
+NAME        | TYPE      | DEFAULT VALUE | DESCRIPTION                               |
+------------|-----------|---------------|-------------------------------------------|
+step        | number    | 5             | Step to scroll area in % of screen height |
+realHeight  | number    | 0             | Real height of scroll area                |
+viewHeight  | number    | 0             | Visible height of area                    |
+topPosition | number    | 0             | Top position of scroll container          |
+scroll      | ScrollBar | null          | Associated [ScrollBar](https://github.com/stbsdk/component-scrollbar) component link       |
+
+Create scroll area instance:
+
+```js
+var scrollArea = new ScrollArea({
+    scroll: scrollBar,
+    step: 5
+});
+```
+
+Add scrollable content to the scroll area:
+
+```js
+scrollArea.$body.innerText = 'Some long long long text to scroll..........';
+```
+
+Re-init of the component with new data:
+
+```js
+scrollArea.init();
 ```
 
 

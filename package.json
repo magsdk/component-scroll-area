@@ -18,7 +18,6 @@
     },
     "dependencies": {
         "spa-component": "spasdk/component",
-        "mag-app": "magsdk/app",
         "stb-keys": "stbsdk/keys"
     },
     "devDependencies": {

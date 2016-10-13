@@ -25,15 +25,17 @@ Add the constructor to the scope:
 var ScrollArea = require('mag-component-scroll-area');
 ```
 
-Specific properties:
+### Constructor config ###
 
-NAME        | TYPE      | DEFAULT VALUE | DESCRIPTION                               |
-------------|-----------|---------------|-------------------------------------------|
-step        | number    | 5             | Step to scroll area in % of screen height |
-realHeight  | number    | 0             | Real height of scroll area                |
-viewHeight  | number    | 0             | Visible height of area                    |
-topPosition | number    | 0             | Top position of scroll container          |
-scroll      | ScrollBar | null          | Associated [ScrollBar](https://github.com/stbsdk/component-scrollbar) component link       |
+Own properties in addition to inherited from [Component](https://github.com/spasdk/component#constructor-config):
+
+ Name        | Type      | Default value | Description
+-------------|-----------|---------------|-------------
+ step        | number    | 5             | step to scroll area in % of screen height
+ realHeight  | number    | 0             | real height of scroll area
+ viewHeight  | number    | 0             | visible height of area
+ topPosition | number    | 0             | top position of scroll container
+ scroll      | ScrollBar | null          | associated [ScrollBar](https://github.com/stbsdk/component-scrollbar) component link       |
 
 Create scroll area instance:
 
@@ -43,6 +45,8 @@ var scrollArea = new ScrollArea({
     step: 5
 });
 ```
+
+### Use cases ###
 
 Add scrollable content to the scroll area:
 

@@ -1,9 +1,10 @@
 Scroll area component
 ==============
 
-[![Build Status](https://img.shields.io/travis/magsdk/component-scroll-area.svg?style=flat-square)](https://travis-ci.org/magsdk/component-scroll-area)
-[![NPM version](https://img.shields.io/npm/v/mag-component-scroll-area.svg?style=flat-square)](https://www.npmjs.com/package/mag-component-scroll-area)
-[![Dependencies Status](https://img.shields.io/david/spasdk/component-scroll-area.svg?style=flat-square)](https://david-dm.org/spasdk/component-scroll-area)
+[![build status](https://img.shields.io/travis/magsdk/component-scroll-area.svg?style=flat-square)](https://travis-ci.org/magsdk/component-scroll-area)
+[![npm version](https://img.shields.io/npm/v/mag-component-scroll-area.svg?style=flat-square)](https://www.npmjs.com/package/mag-component-scroll-area)
+[![dependencies status](https://img.shields.io/david/spasdk/component-scroll-area.svg?style=flat-square)](https://david-dm.org/spasdk/component-scroll-area)
+[![devDependencies status](https://img.shields.io/david/dev/spasdk/component-scroll-area.svg?style=flat-square)](https://david-dm.org/spasdk/component-scroll-area?type=dev)
 [![Gitter](https://img.shields.io/badge/gitter-join%20chat-blue.svg?style=flat-square)](https://gitter.im/DarkPark/spasdk)
 
 

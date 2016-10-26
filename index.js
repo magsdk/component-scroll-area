@@ -72,7 +72,6 @@ function ScrollArea ( config ) {
 
     Component.call(this, config);
 
-
     this.$node.appendChild(this.$body);
 
     // component setup

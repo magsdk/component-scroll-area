@@ -166,7 +166,6 @@ ScrollArea.prototype.init = function ( config ) {
     this.realHeight = this.$body.offsetHeight;
     this.viewHeight = this.$node.offsetHeight;
     this.topPosition = 0;
-    // reset offset for inner container
     this.$body.style.top = 0;
 
     if ( config.scroll ) {

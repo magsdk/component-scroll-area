@@ -25,12 +25,14 @@ function ScrollArea ( config ) {
     config = config || {};
 
     if ( DEVELOP ) {
-        if ( typeof config !== 'object' ) { throw new Error(__filename + ': wrong config type'); }
+        if ( typeof config !== 'object' ) {
+            throw new Error(__filename + ': wrong config type');
+        }
         // init parameters checks
-        if ( config.className && typeof config.className !== 'string' ) { throw new Error(__filename + ': wrong or empty config.className'); }
+        if ( config.className && typeof config.className !== 'string' ) {
+            throw new Error(__filename + ': wrong or empty config.className');
+        }
     }
-
-    //config.className = ' scrollArea ' + (config.className || '');
 
     config.$body = document.createElement('div');
     config.$body.className = 'body';
@@ -116,6 +118,7 @@ ScrollArea.prototype.defaultEvents = {
  * @type {Object}
  * @property {number} direction key code initiator of movement
  */
+
 
 /**
  * Move ScrollArea content

@@ -25,12 +25,14 @@ function ScrollArea ( config ) {
     config = config || {};
 
     if ( DEVELOP ) {
-        if ( typeof config !== 'object' ) { throw new Error(__filename + ': wrong config type'); }
+        if ( typeof config !== 'object' ) {
+            throw new Error(__filename + ': wrong config type');
+        }
         // init parameters checks
-        if ( config.className && typeof config.className !== 'string' ) { throw new Error(__filename + ': wrong or empty config.className'); }
+        if ( config.className && typeof config.className !== 'string' ) {
+            throw new Error(__filename + ': wrong or empty config.className');
+        }
     }
-
-    //config.className = ' scrollArea ' + (config.className || '');
 
     config.$body = document.createElement('div');
     config.$body.className = 'body';
@@ -71,7 +73,6 @@ function ScrollArea ( config ) {
     this.scroll = null;
 
     Component.call(this, config);
-
 
     this.$node.appendChild(this.$body);
 
@@ -117,6 +118,7 @@ ScrollArea.prototype.defaultEvents = {
  * @type {Object}
  * @property {number} direction key code initiator of movement
  */
+
 
 /**
  * Move ScrollArea content
@@ -167,6 +169,7 @@ ScrollArea.prototype.init = function ( config ) {
     this.realHeight = this.$body.offsetHeight;
     this.viewHeight = this.$node.offsetHeight;
     this.topPosition = 0;
+    this.$body.style.top = 0;
 
     if ( config.scroll ) {
         this.scroll = config.scroll;

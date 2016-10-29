@@ -18,7 +18,7 @@
     },
     "dependencies": {
         "spa-component": "1.*.*",
-        "stb-component": "stbsdk/component",
+        "stb-component": "1.*.*",
         "stb-keys": "1.*.*"
     },
     "devDependencies": {

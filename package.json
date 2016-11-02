@@ -1,6 +1,6 @@
 {
     "name": "mag-component-scroll-area",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Base scroll area implementation.",
     "author": {
         "name": "Stanislav Kalashnik",

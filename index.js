@@ -157,6 +157,7 @@ ScrollArea.prototype.move = function ( direction ) {
     }
 };
 
+
 /**
  * Init or re-init of the component inner structures and HTML.
  *

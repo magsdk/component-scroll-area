@@ -9,8 +9,7 @@
     .mag-component-scroll-area.hidden {
         display: none; }
     .mag-component-scroll-area > .body {
+        padding: 20px;
         position: absolute; }
-        .mag-component-scroll-area > .body > div {
-            padding: 20px; }
     .mag-component-scroll-area.focus {
         outline: 1px dashed red; }

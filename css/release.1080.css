@@ -8,3 +8,5 @@
         display: none; }
     .mag-component-scroll-area > .body {
         position: absolute; }
+        .mag-component-scroll-area > .body > div {
+            padding: 30px; }

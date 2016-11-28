@@ -130,7 +130,7 @@ ScrollArea.prototype.move = function ( direction ) {
 
     switch ( direction ) {
         case keys.down:
-            if ( this.topPosition - this.step * height / 100 < this.viewHeight - this.realHeight ) {
+            if ( this.topPosition - this.step * height / 100 <= this.viewHeight - this.realHeight ) {
                 this.emit('overflow', {direction: direction});
                 return;
             }

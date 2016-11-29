@@ -7,5 +7,4 @@
     .mag-component-scroll-area.hidden {
         display: none; }
     .mag-component-scroll-area > .body {
-        padding: 30px;
         position: absolute; }

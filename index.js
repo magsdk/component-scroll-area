@@ -29,7 +29,7 @@ function ScrollArea ( config ) {
             throw new Error(__filename + ': wrong config type');
         }
         // init parameters checks
-        if ( config.className && typeof config.className !== 'string' ) {
+        if ( 'className' in config && (!config.className || typeof config.className !== 'string') ) {
             throw new Error(__filename + ': wrong or empty config.className');
         }
     }

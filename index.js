@@ -7,8 +7,8 @@
 
 'use strict';
 
-var Component  = require('spa-component'),
-    keys       = require('stb-keys');
+var Component = require('spa-component'),
+    keys      = require('stb-keys');
 
 
 /**
@@ -127,7 +127,7 @@ ScrollArea.prototype.defaultEvents = {
  */
 ScrollArea.prototype.move = function ( direction ) {
     var height = screen.height,
-        delta = this.viewHeight - this.realHeight;
+        delta  = this.viewHeight - this.realHeight;
 
     // run logic only if it's reasonable
     if ( delta < 0 ) {
@@ -149,6 +149,8 @@ ScrollArea.prototype.move = function ( direction ) {
                 break;
             case keys.up:
                 if ( this.topPosition + this.step * height / 100 > 0 ) {
+                    this.scroll.scrollTo(0);
+                    this.$body.style.top = '0px';
                     this.emit('overflow', {direction: direction});
                     return;
                 }

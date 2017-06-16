@@ -137,6 +137,7 @@ ScrollArea.prototype.move = function ( direction ) {
                     this.scroll.scrollTo(-delta);
                     this.$body.style.top = delta + 'px';
                     this.emit('overflow', {direction: direction});
+
                     return;
                 }
 
@@ -152,6 +153,7 @@ ScrollArea.prototype.move = function ( direction ) {
                     this.scroll.scrollTo(0);
                     this.$body.style.top = '0px';
                     this.emit('overflow', {direction: direction});
+
                     return;
                 }
                 this.topPosition += Math.ceil(this.step * height / 100);

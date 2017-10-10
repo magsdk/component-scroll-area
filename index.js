@@ -106,6 +106,10 @@ ScrollArea.prototype.defaultEvents = {
                 this.move(event.code);
                 break;
         }
+    },
+    mousewheel: function ( event ) {
+        // scrolling by Y axis
+        this.move(event.wheelDeltaY > 0 ? keys.up : keys.down);
     }
 };
 

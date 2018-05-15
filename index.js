@@ -133,7 +133,7 @@ ScrollArea.prototype.move = function ( direction ) {
     var height = screen.height,
         delta  = this.viewHeight - this.realHeight;
 
-    // run logic only if it's reasonable
+    // run logic only if it's reasonable to navigate
     if ( delta < 0 ) {
         switch ( direction ) {
             case keys.down:
@@ -168,6 +168,8 @@ ScrollArea.prototype.move = function ( direction ) {
                 this.$body.style.top = this.topPosition + 'px';
                 break;
         }
+    } else {
+        this.emit('overflow', {direction: direction});
     }
 };
 

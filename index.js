@@ -168,6 +168,8 @@ ScrollArea.prototype.move = function ( direction ) {
                 this.$body.style.top = this.topPosition + 'px';
                 break;
         }
+    } else {
+        this.emit('overflow', {direction: direction});
     }
 };
 
